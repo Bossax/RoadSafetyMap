@@ -1,0 +1,39 @@
+/* Container to hold both the map and control panel */
+#app-container {
+    position: relative;
+    width: 100%;
+    /* Set the desired width of the app */
+    margin: 0 auto;
+    /* Center the app horizontally */
+}
+
+.map-container {
+    height: 600px;
+    width: 50%;
+    left: 0px;
+
+    /* Use the full width available in the container */
+}
+
+#map {
+    height: 100%;
+}
+
+.control-panel {
+    position: relative;
+    top: 20px;
+    left: 0px;
+    width: 49%;
+    background-color: rgba(216, 193, 117, 0.849);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.rating-panel input[type="radio"] {
+    margin-right: 5px;
+}
+
+.rating-panel button {
+    margin-top: 10px;
+}

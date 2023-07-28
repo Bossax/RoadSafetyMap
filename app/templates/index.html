@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Road Safety Web App</title>
+    <!-- Include custom CSS file -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    
+</head>
+
+<body>
+<!-- Container to hold both the map and control panel -->
+<div id="app-container">
+    <div class="map-container">
+        <!-- Display the Google Map here -->
+        <div id="map"></div>
+    </div>
+
+    <div class="control-panel">
+        <button id="start-btn">Start Route Creation</button>
+        <button id="stop-btn">Stop Route Creation</button>
+        <div class="rating-panel">
+            <p>Rate Safety Level:</p>
+            <input type="radio" name="safety-level" value="1">1
+            <input type="radio" name="safety-level" value="2">2
+            <input type="radio" name="safety-level" value="3">3
+            <input type="radio" name="safety-level" value="4">4
+            <input type="radio" name="safety-level" value="5">5
+            <button id="submit-rating">Submit Rating</button>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Include custom JavaScript file -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    <!-- Call Googla Map API with InitMap callback
+    -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDncRZvpltoUHZB_JXrOlrONHGvQxBCZDw&callback=initMap"></script>
+
+</body>
+
+</html>
